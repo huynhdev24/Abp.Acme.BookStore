@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Text;
 using Volo.Abp.Application.Dtos;
 
-namespace Abp.Acme.BookStore.BookDto
+namespace Abp.Acme.BookStore.Books
 {
     public class BookDto: AuditedEntityDto<Guid>
     {
