@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Abp.Acme.BookStore.Books
 {
-    class CreateUpdateBookDto
+    public class CreateUpdateBookDto
     {
         [Required]
         [StringLength(128)]
@@ -19,6 +19,6 @@ namespace Abp.Acme.BookStore.Books
         public DateTime PublishDate { get; set; } = DateTime.Now;
 
         [Required]
-        public float Price { get;set }
+        public float Price { get; set; }
     }
 }
