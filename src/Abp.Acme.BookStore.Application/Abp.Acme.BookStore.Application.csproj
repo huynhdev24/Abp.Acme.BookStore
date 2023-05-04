@@ -11,9 +11,14 @@
   <ItemGroup>
     <ProjectReference Include="..\Abp.Acme.BookStore.Domain\Abp.Acme.BookStore.Domain.csproj" />
     <ProjectReference Include="..\Abp.Acme.BookStore.Application.Contracts\Abp.Acme.BookStore.Application.Contracts.csproj" />
+    <ProjectReference Include="..\Abp.Acme.BookStore.EntityFrameworkCore\Abp.Acme.BookStore.EntityFrameworkCore.csproj" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="Volo.Abp.Account.Application" Version="7.2.1" />
     <PackageReference Include="Volo.Abp.Identity.Application" Version="7.2.1" />
     <PackageReference Include="Volo.Abp.PermissionManagement.Application" Version="7.2.1" />
